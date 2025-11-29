@@ -1,0 +1,31 @@
+{
+  "name": "ai-email-summarizer-backend",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "drizzle:generate": "drizzle-kit generate",
+    "drizzle:push": "drizzle-kit push"
+  },
+  "dependencies": {
+    "@types/node": "^22.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.36.0",
+    "express": "^4.19.2",
+    "json2csv": "^6.0.0-alpha.2",
+    "openai": "^4.67.0",
+    "pg": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/json2csv": "^5.0.7",
+    "@types/pg": "^8.15.6",
+    "drizzle-kit": "^0.31.7",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.3"
+  }
+}
