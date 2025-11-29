@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+drizzle/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Environment Variables (IMPORTANT for secrets)
+.env
+.env.local
+.env.*.local
+backend/.env
+frontend/.env
+
+# OS / Editor files
+.DS_Store
+*.swp
+*.swo
+Thumbs.db
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Vite specific
+.vite/
+
+# Misc
+coverage/
+.idea/
+.vscode/
+*.zip
