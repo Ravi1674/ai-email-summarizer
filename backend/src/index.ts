@@ -5,9 +5,9 @@ import { router as emailRouter } from "./routes/emails";
 
 const app = express();
 const port = process.env.PORT || 4000;
-const corsOrigin = process.env.CORS_ORIGIN || "http://localhost:5173";
 
-app.use(cors({ origin: corsOrigin }));
+app.use(cors());
+
 app.use(express.json());
 
 app.get("/health", (_req, res) => {
